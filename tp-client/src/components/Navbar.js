@@ -4,7 +4,7 @@ import { NavLink, Link } from 'react-router-dom';
 function Navbar(props) {
     return (
         <nav className="navbar navbar-dark bg-dark">
-            <Link className="navbar-brand" to="/">TP Finder</Link>
+            <Link className="navbar-brand" to="/">TP Tracker</Link>
             <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
