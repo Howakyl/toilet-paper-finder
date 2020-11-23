@@ -1,4 +1,4 @@
-Product = {
+productsArr = {
   productName: "Cottonelle Ultra Comfort",
   store: {
       storeName: 'Target',
