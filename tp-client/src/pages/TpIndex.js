@@ -32,7 +32,7 @@ class TpIndex extends React.Component {
                     brandName: "The Home Store",
                     url: "https://www.dollartree.com/the-home-store-1-ply-bath-tissue-1250-sheet-rolls/194247",
                 price: 48.00,
-                stock: 0,
+                stock: 25,
                 ply: 1
                 }]
             },
@@ -65,6 +65,7 @@ class TpIndex extends React.Component {
                             return (
                                 <div className="mb-5 blue-thing" key={index}>
                                     <h4>{store.name}</h4>
+                                    <span>Current Stock:</span>
                                     <div className="progress">
                                         <div className="progress-bar bg-info" role="progressbar" style={{width: `${store.brands[0].stock}%`}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
