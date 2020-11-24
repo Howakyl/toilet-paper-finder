@@ -63,7 +63,7 @@ class TpIndex extends React.Component {
                     <div className="">
                         {this.state.productsArr.map((store, index) => {
                             return (
-                                <div className="mb-5" key={index}>
+                                <div className="mb-5 blue-thing" key={index}>
                                     <h4>{store.name}</h4>
                                     <div className="progress">
                                         <div className="progress-bar bg-info" role="progressbar" style={{width: `${store.brands[0].stock}%`}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>

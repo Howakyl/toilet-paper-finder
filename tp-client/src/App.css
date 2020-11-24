@@ -1,6 +1,11 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto' , sans-serif;
+}
+
+h1 {
+  font-family: 'Goldman' , cursive;
 }
 
 .app {
@@ -15,6 +20,9 @@ nav {
   top: 0;
   width: 100%;
   z-index: 1;
+  background-color: #69CCF0 !important;
+  color: black !important;
+  font-family: 'Goldman' , cursive;
 }
 
 .navbar-brand {
@@ -23,7 +31,7 @@ nav {
 
 .homeTp {
   text-align: center;
-
+  margin-top: 2em;
 }
 
 .iconContainer {
@@ -31,24 +39,31 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .icon1 {
-  height: 220px;
-  width: 220px;  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .icon2 {
-  height: 200px;
-  width: 200px;  
+  text-align: center; 
 }
 
 .icon1 img {
-  width: 100%;
+  width: 300px;
+  cursor: pointer;
 }
 
 .icon2 img {
-  width: 100%;
+  width: 235px;
+  cursor: pointer;
+}
+
+.icon2 h3 {
+  margin-top: .75em;
 }
 
 .icon3 img {
@@ -61,10 +76,10 @@ nav {
 }
 
 .modalBtns {
-  border: solid 1px gray;
+  border-bottom: solid 1px gray;
   width: 100%;
   text-align: center;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .mapContainer {
@@ -87,13 +102,21 @@ nav {
 
 .progress {
   width: 100%;
+  border: 1px solid;
 }
 
 .storesContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 2em;
+  /* margin-bottom: 2em; */
+  background-color: #69CCF0;
+}
+
+.blue-thing {
+  background-color: #f1f1f1;
+  padding: 1em;
+  border-radius: 20px;
 }
 
 .storesContainer h3 {
@@ -109,6 +132,8 @@ nav {
 
 .store-button {
   display: inline-block;
+  background-color: #A36727;
+  font-family: 'Goldman' , cursive;
 }
 
 @media only screen and (min-width: 800px) {
