@@ -1,5 +1,6 @@
 import React from 'react';
 import Map from '../components/Map';
+import { Link } from 'react-router-dom';
 
 class TpIndex extends React.Component {
     state = {
@@ -7,6 +8,7 @@ class TpIndex extends React.Component {
             {
                 name: "Target",
                 usualStock: "Cottonelle, Charmin, Up & Up",
+                id: 0,
                 brands: [{
                     brandName: "Cottonelle Ultra Comfort",
                     url: "https://www.target.com/p/cottonelle-ultra-comfort-care-toilet-paper-mega-rolls/-/A-54605704?preselect=52248204#lnk=sametab",
@@ -25,6 +27,7 @@ class TpIndex extends React.Component {
             {
                 name: "Dollar Tree",
                 usualStock: "The Home Store, Strong and Soft",
+                id: 1,
                 brands: [{
                     brandName: "The Home Store",
                     url: "https://www.dollartree.com/the-home-store-1-ply-bath-tissue-1250-sheet-rolls/194247",
@@ -36,6 +39,7 @@ class TpIndex extends React.Component {
             {
                 name: 'Safeway',
                 usualStock: "Charmin Ultra Soft, Cottonelle",
+                id: 2,
                 brands: [{
                     brandName: "Charmin Ultra Soft",
                     url: "https://www.safeway.com/shop/product-details.970011733.html",
@@ -66,7 +70,7 @@ class TpIndex extends React.Component {
                                     </div>
                                     <section className="storeIndex-buttonContainer">
                                         <span>Usually stocks: <small><em>{store.usualStock}</em></small></span>
-                                        <a href="/" className="btn btn-secondary store-button">Store Details</a>
+                                        <Link to={`stores/${store.id}`} className="btn btn-secondary store-button">Store Details</Link>
                                     </section>
                                 </div>
                             )
