@@ -64,8 +64,10 @@ class TpIndex extends React.Component {
                                     <div className="progress">
                                         <div className="progress-bar bg-info" role="progressbar" style={{width: `${store.brands[0].stock}%`}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <p>Usually stocks: <small><em>{store.usualStock}</em></small></p>
-                                    <a href="/" className="btn btn-secondary">Store Details</a>
+                                    <section className="storeIndex-buttonContainer">
+                                        <span>Usually stocks: <small><em>{store.usualStock}</em></small></span>
+                                        <a href="/" className="btn btn-secondary store-button">Store Details</a>
+                                    </section>
                                 </div>
                             )
                         })}
