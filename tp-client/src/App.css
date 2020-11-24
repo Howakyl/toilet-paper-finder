@@ -12,15 +12,14 @@ body {
 
 }
 
+.navbar-brand {
+  margin: auto;
+}
 
 .mapContainer {
-  /* padding-top: 2em; 
-  padding-left: 2em; */
     position: relative;
     padding-bottom: 26.25%;
-    /* padding-top: 30px; */
     height: 50vh;
-    /* overflow: hidden; */
 }
 
 
@@ -34,8 +33,14 @@ body {
     height: 100%;
 }
 
-/* .storeContainer {
-  padding-top: 40em; 
-  padding-right: 2em;
-  color: white
-} */
+.progress {
+  width: 75%;
+}
+
+.storesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+}
