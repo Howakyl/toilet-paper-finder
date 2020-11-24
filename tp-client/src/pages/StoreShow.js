@@ -1,9 +1,12 @@
 import React from 'react';
-import Map from '../components/Map';
-import { Link } from 'react-router-dom';
+import './StoreShow.css';
+import '../components/Store';
+import Store from '../components/Store';
 
-class TpIndex extends React.Component {
-    state = {
+class StoreShow extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
         productsArr: [
             {
                 name: "Target",
@@ -48,38 +51,33 @@ class TpIndex extends React.Component {
                     ply: 2
                 }]
             }
-            ]}
-    
-    
+            ]
+        }
+    }
 
     render () {
+        const storesArr = this.state.productsArr.map((store) => {
+            return (
+                <Store store={store} key={store.id}/>
+            )
+        })
+        console.log(storesArr)
         return (
-            <>
-                <section className="mapContainer">
-                    <Map />
-                </section>
-            <div className=" container storesContainer">
-                <h3>Products Near You:</h3>
-                    <div className="">
-                        {this.state.productsArr.map((store, index) => {
-                            return (
-                                <div className="mb-5" key={index}>
-                                    <h4>{store.name}</h4>
-                                    <div className="progress">
-                                        <div className="progress-bar bg-info" role="progressbar" style={{width: `${store.brands[0].stock}%`}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <section className="storeIndex-buttonContainer">
-                                        <span>Usually stocks: <small><em>{store.usualStock}</em></small></span>
-                                        <Link to={`stores/${store.id}`} className="btn btn-secondary store-button">Store Details</Link>
-                                    </section>
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div>
-            </>
-        );
-    };
-};
+            // <div className="container">
+            //     {this.state.productsArr.map((store, index) => {
+            //         return (
+            //             <>
+            //             <h1>Brands Sold by: {store.name}</h1>
+            //             <div>
+            //                 <h2>{store.brands[0].brandName}</h2>
+            //             </div>
+            //             </>
+            //         )
+            //     })}
+            // </div>
+            <div>{storesArr[0]}</div>
+        )
+    }
+}
 
-export default TpIndex;
+export default StoreShow;

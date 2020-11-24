@@ -10,11 +10,8 @@ function Navbar(props) {
             </button>
             <div className="navbar-collapse collapse" id="navbarsExample01">
                 <ul className="navbar-nav mr-auto">
-                    {/* <li className="nav-item active">
-                        <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
-                    </li> */}
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/index">View TP</NavLink>
+                        <NavLink className="nav-link" to="/index">View Toilet Paper</NavLink>
                     </li>
                 </ul>
                 <form className="form-inline my-2 my-md-0">
