@@ -5,7 +5,7 @@ const Covid = () => {
         <div className="container">
             <div className="covidCard">
             <h2>Covid Regulations For Target</h2>
-              <ul>
+              <ul className="covid-container">
                 <li> Mask Required</li>
                 <li> Curbside Pickup</li>
                 <li> No Refunds</li>
