@@ -54,17 +54,18 @@ class TpIndex extends React.Component {
                 <section className="mapContainer">
                     <Map />
                 </section>
-            <div className=" storesContainer">
+            <div className=" container storesContainer">
                 <h3>Products Near You:</h3>
                     <div className="">
                         {this.state.productsArr.map((store, index) => {
                             return (
-                                <div>
+                                <div className="mb-5" key={index}>
                                     <h4>{store.name}</h4>
                                     <div className="progress">
                                         <div className="progress-bar bg-info" role="progressbar" style={{width: `${store.brands[0].stock}%`}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <p>Usually stocks: <em>{store.usualStock}</em></p>
+                                    <p>Usually stocks: <small><em>{store.usualStock}</em></small></p>
+                                    <a href="/" className="btn btn-secondary">Store Details</a>
                                 </div>
                             )
                         })}
