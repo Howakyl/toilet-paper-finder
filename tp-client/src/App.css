@@ -25,6 +25,24 @@ nav {
   font-family: 'Goldman' , cursive;
 }
 
+nav p {
+  margin-left: 10rem;
+  margin-top: 1em;
+}
+
+.home-header {
+  margin-top: 7rem;
+}
+
+.logoImg {
+  width: 150px;
+  height: 100px;
+  position: fixed;
+  top: -5;
+  margin-left: 5rem;
+  z-index: 1;
+}
+
 .navbar-brand {
   margin: auto;
 }

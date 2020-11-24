@@ -7,7 +7,7 @@ import img3 from '../images/TP Fight.png'
 const Home  = () => {
     return (
         <div>
-            <h1>Welcome!</h1>
+            <h1 className="home-header">Welcome!</h1>
             <h3 className='homeTp'>View TP Availibility By:</h3>
             <div className="iconContainer">
                 <div className="icon1" data-toggle="modal" data-target="#exampleModal">

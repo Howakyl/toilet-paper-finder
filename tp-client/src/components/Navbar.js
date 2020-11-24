@@ -1,10 +1,12 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import logo from '../images/hackathon-logo.png';
 
 function Navbar(props) {
     return (
         <nav className="navbar navbar-light">
-            <Link className="navbar-brand" to="/">TP Tracker</Link>
+            <Link className="navbar-brand" to="/"><p>TP Tracker</p></Link>
+            <img className="logoImg" src={logo} alt="2020-logo"/>
             <button className="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
