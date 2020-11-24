@@ -72,14 +72,14 @@ export class MapContainer extends Component {
     // );
 
     return (
-      <div className="app">
-        <div className="mapContainer">
+      <div>
+        <div>
         <Map google={this.props.google}
         initialCenter={{
           lat: 47.61, 
           lng: -122.33
         }}
-        style={{width: '80%', height: '80%'}}
+        style={{width: '100%', height: '100%'}}
         zoom={12}
         onClick={this.onMapClicked}>
         <Marker 
