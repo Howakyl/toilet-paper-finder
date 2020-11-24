@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
-import icon from '../images/toilet-paper.png';
+import icon from '../images/toilet123.png';
 
 export class MapContainer extends Component {
   state = {
@@ -91,7 +91,7 @@ export class MapContainer extends Component {
               <Marker 
               key={index}
               position={{ lat:store.lat, lng:store.lng }}
-              icon={{ url: icon, scaledSize: new this.props.google.maps.Size(25, 25)}}
+              icon={{ url: icon, scaledSize: new this.props.google.maps.Size(100, 80)}}
               />
             )
           })}
