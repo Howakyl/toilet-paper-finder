@@ -51,25 +51,6 @@ export class MapContainer extends Component {
     ]
   }
   render() {
-          
-
-  
-    // let tpMarkers = this.props.map( ( elem, index ) => 
-      // (
-      //   <Marker 
-      //     // key={index}
-      //     // title={elem.properties.place}
-      //     // name={elem.properties.place}
-      //     // icon={{scaledSize: new this.props.google.maps.Size(25, 25)}}
-      //     // position={{ 
-      //     //   lat: elem.geometry.coordinates[1], 
-      //     //   lng: elem.geometry.coordinates[0] 
-      //     // }}
-      //     postion={{  lat: 47.61, 
-      //   lng: -122.33 }}
-      //   />
-      // )
-    // );
 
     return (
       <div>

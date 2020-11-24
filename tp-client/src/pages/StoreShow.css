@@ -7,6 +7,12 @@ h1 {
     margin-top: 2em;
 }
 
+h2 {
+    text-align: center;
+    margin: 2 em;
+    padding-bottom: 1em;
+}
+
 .storeCard {
     display: flex;
     flex-direction: row;
@@ -21,9 +27,59 @@ h1 {
 }
 
 .storeCard-img {
-    width: 100px;
-    height: 100px;
+    width: 20%;
+    height: 20%;
     background-color: white;
     /* margin-right: 15rem; */
     border-radius: 50%;
 }
+
+.covidCard {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    background-color: lightblue;
+    border: solid black 1px;
+    margin-bottom: 2rem;
+    margin-left: 13rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15rem;
+  }
+  
+ul li:before {
+    content: '✓';
+
+  }
+
+.storeLink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    font-size: 30px;
+    margin-left: 7rem;
+}
+
+.storeButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    background-color: lightblue;
+    border: solid black 1px;
+    margin-bottom: 2rem;
+    margin-left: 19rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+

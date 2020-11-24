@@ -2,6 +2,9 @@ import React from 'react';
 import './StoreShow.css';
 import '../components/Store';
 import Store from '../components/Store';
+import Covid from '../components/Covid';
+import StoreButton from '../components/StoreButton';
+
 
 class StoreShow extends React.Component {
     constructor(props) {
@@ -58,7 +61,11 @@ class StoreShow extends React.Component {
     render () {
         const storesArr = this.state.productsArr.map((store) => {
             return (
+            <>
                 <Store store={store} key={store.id}/>
+                <Covid />
+                <StoreButton />
+            </>
             )
         })
         console.log(storesArr)
@@ -77,6 +84,7 @@ class StoreShow extends React.Component {
             // </div>
             <div>{storesArr[0]}</div>
         )
+        
     }
 }
 
