@@ -1,4 +1,5 @@
 import React from 'react';
+import Map from '../components/Map';
 
 class TpIndex extends React.Component {
     state = {
@@ -49,6 +50,7 @@ class TpIndex extends React.Component {
 
         return (
             <div>
+                <Map />
                 <h2>This is all of our TP!</h2>
                 <ul>
                 <li>{this.state.productsArr[0].name}</li>
