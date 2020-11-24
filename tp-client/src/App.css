@@ -21,6 +21,52 @@ nav {
   margin: auto;
 }
 
+.homeTp {
+  text-align: center;
+
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.icon1 {
+  height: 220px;
+  width: 220px;  
+}
+
+.icon2 {
+  height: 200px;
+  width: 200px;  
+}
+
+.icon1 img {
+  width: 100%;
+}
+
+.icon2 img {
+  width: 100%;
+}
+
+.icon3 img {
+  width: 100%;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalBtns {
+  border: solid 1px gray;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+}
+
 .mapContainer {
     position: relative;
     padding-bottom: 26.25%;
