@@ -46,15 +46,19 @@ class TpIndex extends React.Component {
     
 
     render () {
-        console.log(this.state)
 
         return (
             <div>
                 <Map />
-                <h2>This is all of our TP!</h2>
-                <ul>
-                <li>{this.state.productsArr[0].name}</li>
-                </ul>
+            <div className="app">
+                <div className="storeContainer">
+                    {this.state.productsArr.map((store, index) => {
+                    return ( 
+                        <h4>{store.name}</h4>
+                    )
+                    })}
+                </div>
+                </div>
             </div>
         );
     };

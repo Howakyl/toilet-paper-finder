@@ -72,29 +72,31 @@ export class MapContainer extends Component {
     // );
 
     return (
-      <div className="mapContainer">
-      <Map google={this.props.google}
-      initialCenter={{
-        lat: 47.61, 
-        lng: -122.33
-      }}
-      style={{width: '80%', height: '80%'}}
-      zoom={12}
-      onClick={this.onMapClicked}>
-      <Marker 
-          icon={{ icon, 
-          scaledSize: new this.props.google.maps.Size(25, 25)}}
-          />
-        {this.state.productsArr.map((store, index) => {
-          return ( 
-            <Marker 
-            key={index}
-            position={{ lat:store.lat, lng:store.lng }}
-            icon={{ url: icon, scaledSize: new this.props.google.maps.Size(25, 25)}}
+      <div className="app">
+        <div className="mapContainer">
+        <Map google={this.props.google}
+        initialCenter={{
+          lat: 47.61, 
+          lng: -122.33
+        }}
+        style={{width: '80%', height: '80%'}}
+        zoom={12}
+        onClick={this.onMapClicked}>
+        <Marker 
+            icon={{ icon, 
+            scaledSize: new this.props.google.maps.Size(25, 25)}}
             />
-           )
-        })}
-      </Map>
+          {this.state.productsArr.map((store, index) => {
+            return ( 
+              <Marker 
+              key={index}
+              position={{ lat:store.lat, lng:store.lng }}
+              icon={{ url: icon, scaledSize: new this.props.google.maps.Size(25, 25)}}
+              />
+            )
+          })}
+        </Map>
+        </div>
       </div>
     );
   }
