@@ -48,9 +48,11 @@ class TpIndex extends React.Component {
     render () {
 
         return (
-            <div>
-                <Map />
-            <div className="app">
+            <>
+                <section className="mapContainer">
+                    <Map />
+                </section>
+            <div className="">
                 <div className="storeContainer">
                     {this.state.productsArr.map((store, index) => {
                     return ( 
@@ -59,7 +61,7 @@ class TpIndex extends React.Component {
                     })}
                 </div>
                 </div>
-            </div>
+            </>
         );
     };
 };
