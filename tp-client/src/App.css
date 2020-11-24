@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-brand {
+  margin: auto;
+}
+
+.mapContainer {
+    position: relative;
+    padding-bottom: 26.25%;
+    height: 50vh;
+    z-index: 0;
+}
+
+
+.mapContainer iframe,
+.mapContainer object,
+.mapContainer embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.progress {
+  width: 100%;
+}
+
+.storesContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  margin-bottom: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.storesContainer h3 {
+  margin-bottom: 2em;
+  margin-top: .5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.storeIndex-buttonContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1em;
+}
+
+.store-button {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 800px) {
+  .storesContainer {
+    width: 75%;
   }
 }
