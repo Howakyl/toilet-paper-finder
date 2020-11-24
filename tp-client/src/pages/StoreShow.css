@@ -19,18 +19,17 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    background-color: steelblue;
+    background-color: #69CCF0;
     border: solid black 1px;
     margin-bottom: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    border-radius: 20px;
 }
 
 .storeCard-img {
-    width: 20%;
-    height: 20%;
-    background-color: white;
-    /* margin-right: 15rem; */
+    width: 40%;
+    /* height: 20%; */
     border-radius: 50%;
 }
 
@@ -39,13 +38,13 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
-    background-color: lightblue;
+    align-items: center;
+    background-color: #69CCF0;
     border: solid black 1px;
     margin-bottom: 2rem;
-    margin-left: 13rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    border-radius: 20px;
 }
 
 ul {
@@ -53,7 +52,6 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 15rem;
   }
   
 .covid-container li:before {
@@ -66,19 +64,20 @@ ul {
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    font-size: 30px;
-    margin-left: 7rem;
+    font-size: 20px;
+    color: black !important;
 }
 
 .storeButton {
+    background-color: #A36727;
+    margin: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    border-radius: 20px;
+    justify-content: space-evenly;
     width: 40%;
-    background-color: lightblue;
     border: solid black 1px;
+    text-align: center;
     margin-bottom: 2rem;
-    margin-left: 19rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
