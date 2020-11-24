@@ -79,7 +79,7 @@ export class MapContainer extends Component {
         lng: -122.33
       }}
       style={{width: '80%', height: '80%'}}
-      zoom={3}
+      zoom={12}
       onClick={this.onMapClicked}>
       <Marker 
           icon={{ icon, 
